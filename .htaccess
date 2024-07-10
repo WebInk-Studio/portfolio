@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^webink-studio.github.io$
+RewriteRule ^(.*)$ https://webink-studio.github.io/$1 [R=301,L]

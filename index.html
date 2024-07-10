@@ -73,12 +73,18 @@
       }
     </script>
     <script type="text/javascript">
-      // Redirect https://www.webink-studio.github.io, https://webink-studio.github.io, http://www.webink-studio.github.io, http://webink-studio.github.io
-      // to https://webink-studio.github.io
+      // Redirect https://www.webink-studio.github.io, https://webink-studio.github.io, http://www.webink-studio.github.io, http://webink-studio.github.io to https://webink-studio.github.io
       if (
-        location.protocol != "https:" &&
+        location.hostname == "www.webink-studio.github.io" ||
+        location.hostname == "webink-studio.github.io" ||
+        location.hostname == "www.webink-studio.github.io" ||
         location.hostname == "webink-studio.github.io"
       ) {
+        location.href = "https://webink-studio.github.io";
+      }
+
+      // Same for index.html
+      if (location.pathname == "/index.html") {
         location.href = "https://webink-studio.github.io";
       }
 

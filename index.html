@@ -72,6 +72,19 @@
         }
       }
     </script>
+    <script type="text/javascript">
+      // Redirect https://www.webink-studio.github.io, https://webink-studio.github.io, http://www.webink-studio.github.io, http://webink-studio.github.io to https://webink-studio.github.io
+      if (
+        window.location.hostname == "www.webink-studio.github.io" ||
+        window.location.hostname == "webink-studio.github.io" ||
+        window.location.hostname == "www.webink-studio.github.io" ||
+        window.location.hostname == "webink-studio.github.io"
+      ) {
+        window.location.replace(
+          `https://webink-studio.github.io${window.location.pathname}`
+        );
+      }
+    </script>
   </head>
 
   <body>

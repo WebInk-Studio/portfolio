@@ -10,7 +10,7 @@
 --------------------------------------------------------------*/
 
 body {
-  font-family: "Inconsolata", monosapce;
+  font-family: "Inconsolata", monospace;
   color: #0d1e2d;
 }
 
@@ -542,6 +542,15 @@ h6,
 
 .social a:hover {
   color: #000;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+  filter: invert(100%);
+}
+
+.corousal-inner {
+  justify-content: center;
 }
 
 @media (max-width: 780px) {
